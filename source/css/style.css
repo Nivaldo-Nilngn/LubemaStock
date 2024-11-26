@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdfdfd;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .app-name {
+    font-size: 32px;
+    color: #ff4500;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff4500;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .login-button {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .register-link a {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ff4500;
+    text-decoration: none;
+  }
+  
+  .login-illustration img {
+    width: 100px;
+    margin-top: 20px;
+  }
+  
+  .register-container {
+    max-width: 360px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .register-container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-container .register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .register-container .register-button:hover {
+    background-color: #e63900;
+  }
+  
+  .register-container .login-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  

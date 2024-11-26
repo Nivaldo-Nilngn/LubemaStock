@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gill Sans Shadow'; /* Nome personalizado para a fonte */
+    src: url('../../source/fonts/gill-sans-mt-shadow-5885812b5f2cd.ttf') format('truetype');
+  }
+  
+  .app-name {
+    font-family: 'Gill Sans Shadow', 'Arial', sans-serif; /* Aplica a fonte personalizada */
+    font-size: 32px;
+    color: #ff4500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efeito de sombra adicional */
+    font-weight: bold;
+  }

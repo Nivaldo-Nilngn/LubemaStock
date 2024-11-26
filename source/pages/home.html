@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubema Stock - Home</title>
+    <link rel="stylesheet" href="./source/css/home.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+
+    <!-- Barra Superior com o nome Lubema Stock -->
+    <header class="header">
+        <div class="logo-name">
+            <div class="logo">
+                <img src="../../source/img/logo.svg" alt="Logo"> <!-- Imagem da logo -->
+            </div>
+            <div class="app-name">
+                <span>Lubema</span><br>
+                <span>stock</span> <!-- Nome quebrado em duas linhas -->
+            </div>
+        </div>
+
+        <!-- Menu Hambúrguer -->
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+
+    <!-- Menu Lateral -->
+    <nav class="navbar" id="navLinks">
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Histórioco de depositos</a></li>
+            <li><a href="#">Criar um novo estoque</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="/index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+
+    <h1>Bem-vindo ao Lubema Stock!</h1>
+    <p>Gestão de estoque simplificada e eficiente.</p>
+
+    <div class="content">
+        <!-- Botões -->
+        <div class="buttons">
+            <button class="btn" id="entradaProdutos">Entrada de Produtos</button>
+            <button class="btn" id="saidaProdutos">Saída de Produtos</button>
+            <button class="btn" id="relatorios">Relatórios</button>
+        </div>
+    </div>
+
+    <script type="module" src="./source/js/app.js"></script>
+</body>
+
+</html>

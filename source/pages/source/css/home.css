@@ -1,0 +1,192 @@
+/* Importação da fonte personalizada */
+@font-face {
+    font-family: 'Gill Sans Shadow'; 
+    src: url('../fonts/gill-sans-mt-shadow-5885812b5f2cd.ttf') format('truetype');
+}
+
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+/* Barra Superior */
+.header {
+    background-color: #333; /* Cor de fundo da barra */
+    color: white;
+    padding: 15px;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Distribui o conteúdo entre os extremos */
+    align-items: center; /* Alinha o conteúdo no centro verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se ajustem quando a tela for pequena */
+}
+
+/* Conteúdo Principal */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Logo e Nome no Header */
+.logo-name {
+    display: flex; /* Exibe o logo e o nome lado a lado */
+    align-items: flex-end;
+}
+
+.header .logo {
+    margin-right: 10px; /* Espaçamento entre a logo e o nome */
+}
+
+.header .app-name {
+    font-family: 'Gill Sans Shadow', Arial, sans-serif;
+    font-size: 28px; /* Ajuste do tamanho da fonte */
+    color: #ff4500;
+    line-height: 1.2; /* Controle do espaçamento entre as linhas */
+}
+
+.app-name span {
+    display: inline-block; /* Faz com que cada parte do nome fique lado a lado */
+    font-size: 32px; /* Ajusta o tamanho da fonte para cada parte */
+    font-weight: bold;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* Menu Lateral */
+.navbar {
+    position: fixed;
+    top: 150px;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.3s ease;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para links ao passar o mouse */
+.nav-links li a:hover {
+    background-color: #ff4500;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    margin-left: auto; /* Faz com que o menu hambúrguer fique à direita */
+}
+
+.menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+/* Estilos dos Botões */
+.buttons {
+    display: flex;          /* Flexbox para centralizar os botões */
+    flex-direction: column; /* Colocar os botões um abaixo do outro */
+    justify-content: center; /* Centraliza os botões verticalmente */
+    align-items: center;    /* Centraliza os botões horizontalmente */
+    gap: 15px;              /* Espaçamento entre os botões */
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #ff4500; /* Cor de fundo laranja */
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    width: 250px;              /* Largura fixa para todos os botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e04000; /* Cor de fundo mais escura quando passar o mouse */
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.btn:active {
+    transform: translateY(0); /* Efeito de pressionar o botão */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 1768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.active {
+        right: 0; 
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    /* Ajuste do layout da logo no header para telas pequenas */
+    .header .app-name {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}

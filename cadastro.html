@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubema Stock - Cadastro</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="stylesheet" href="./source/css/reset.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <h1 class="app-name">LUBEMA<br>STOCK</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Nome Completo" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <input type="password" id="confirmPassword" placeholder="Confirme a Senha" required>
+            <button type="submit" class="register-button">Cadastrar</button>
+        </form>
+        <div class="login-link">
+            <p>Já possui uma conta? <a href="./index.html">Faça login</a></p>
+        </div>
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+
+    <script type="module" src="./source/js/firebase.js"></script>
+    <script type="module" src="./source/js/register.js"></script>
+
+
+</body>
+
+</html>
